@@ -4,22 +4,28 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    font-size: 150px;
-    background-color: gray;
+    font-size: 125px;
+    font-family: "SF Pro Display", serif;
+    font-weight: 100;
+    background-color: #226260;
     color: white;
 }
 .LandingPage-main {
     margin-top: 50px;
 }
 
+.LandingPage-main hr {
+    width: 50%;
+}
+
 .cards-background {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     height: 400px;
     max-height: 700px;
-    background-color: gray;
     align-items: center;
 }
 
@@ -30,6 +36,7 @@
     box-shadow: 0 0 10px #000;
     display: flex;
     align-items: center;
+    transition: all ease-in-out 0.5s;
 }
 .cards .image {
     width: 200px;
@@ -40,5 +47,21 @@
     background-position: center;
 }
 .cards:hover {
-
+    transform: scale(2);
+    transition: transform ease 0.3s;
+}
+.cards:first-child:hover {
+    transform: translateX(70%) scale(2);
+}
+.cards:last-child:hover {
+    transform: translateX(-70%) scale(2);
+}
+.cards:hover .image {
+    position: absolute;
+    transition: position, background-size linear 1s;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/icons/rotate-cloth.gif");
+    background-size: 600px;
 }
