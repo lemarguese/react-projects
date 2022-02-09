@@ -1,0 +1,62 @@
+.Sidebar {
+    position: fixed;
+    height: 100%;
+    max-width: 200px;
+    width: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+    z-index: 1;
+    transition: width linear 0.15s;
+}
+.Sidebar:hover {
+    width: 200px;
+    transition: width ease-in-out 0.15s;
+}
+.Sidebar:hover .routes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.more {
+    width: 50px;
+    height: 50px;
+    background-image: url("/src/assets/icons/list-icon.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Sidebar:hover .more {
+    display: none;
+}
+.routes {
+    display: none;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.blocks {
+    display: flex;
+    flex-direction: row;
+}
+.blocks > * {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+.cloth-icon, .cart-icon, .profile-icon {
+    background-size: 25px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+.cloth-icon {
+    background-image: url("/src/assets/icons/cloth-icon.png");
+}
+.cart-icon {
+    background-image: url("/src/assets/icons/cart-icon.png");
+}
+.profile-icon {
+    background-image: url("/src/assets/icons/profile-icon.png");
+}
