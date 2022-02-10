@@ -1,8 +1,13 @@
 import './LandingPage.css';
 import Sidebar from "../Sidebar/Sidebar";
-import {Link} from "react-router-dom";
+import {useEffect} from "react";
+import {Link, NavLink} from "react-router-dom";
 
 const LandingPage = (props) => {
+
+    // useEffect(() => {
+    //     if ()
+    // })
 
     return (
         <>
@@ -13,12 +18,12 @@ const LandingPage = (props) => {
             <div className="LandingPage-main">
                 <hr/>
                 <div className="cards-background">
-                    <Link to="/clothes" className = "cards">
+                    <a href="/clothes"  className = "cards">
                         <div className="image"/>
-                    </Link>
-                    <Link to="/clothes" className = "cards">
+                    </a>
+                    <NavLink to="/clothes" className = "cards">
                         <div className="image"/>
-                    </Link>
+                    </NavLink>
                     <Link to="/clothes" className = "cards">
                         <div className="image"/>
                     </Link>

@@ -1,0 +1,10 @@
+[
+  {
+    "id": 0,
+    "name": "Polo Shirt",
+    "brand": "Ralph Lauren",
+    "image": "ralph",
+    "size": "M",
+    "forWho": "Man"
+  }
+]
