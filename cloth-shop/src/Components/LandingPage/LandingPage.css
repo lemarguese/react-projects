@@ -1,3 +1,8 @@
+p, h1 {
+    font-family: "SF Pro Display", serif;
+
+}
+
 .LandingPage-top {
     display: flex;
     flex-direction: column;
@@ -5,7 +10,6 @@
     width: 100%;
     height: 100%;
     font-size: 125px;
-    font-family: "SF Pro Display", serif;
     font-weight: 100;
     background-color: #226260;
     color: white;
@@ -64,4 +68,87 @@
     height: 100%;
     background-image: url("/src/assets/icons/rotate-cloth.gif");
     background-size: 600px;
+}
+.LandingPage-location {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.Location-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-weight: 200;
+    font-size: 60px;
+    color: #000;
+}
+.content {
+    font-size: 20px;
+}
+.map {
+    background: url("/src/assets/icons/red-cloth-icon.png") center no-repeat;
+    background-size: 400px;
+    width: 400px;
+    height: 460px;
+}
+/*.website-text {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*}*/
+.website-icons {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.instagram, .linkedin, .twitter, .facebook {
+    width: 50px;
+    height: 50px;
+    transition: background-image linear 0.25s;
+}
+.instagram:hover, .linkedin:hover, .twitter:hover, .facebook:hover {
+    transform: scale(1.2);
+    transition: transform ease-in-out 0.25s;
+}
+.instagram:hover {
+    background-image: url("/src/assets/icons/instagram-black.png");
+    transition: background-image linear 0.25s;
+}
+.instagram {
+    background: url("/src/assets/icons/instagram.webp") no-repeat;
+    background-size: 50px;
+}
+.linkedin {
+    background: url("/src/assets/icons/linkedin.png") no-repeat;
+    background-size: 50px;
+}
+.linkedin:hover {
+    background-image: url("/src/assets/icons/linkedin-black.png");
+    transition: background-image linear 0.25s;
+}
+.twitter {
+    background: url("/src/assets/icons/twitter.png") no-repeat;
+    background-size: 50px;
+}
+.twitter:hover {
+    background-image: url("/src/assets/icons/twitter-black.png");
+    transition: background-image linear 0.25s;
+}
+.facebook {
+    background: url("/src/assets/icons/facebook.png") no-repeat;
+    background-size: 50px;
+}
+.facebook:hover {
+    background-image: url("/src/assets/icons/facebook-black.png");
+    transition: background-image linear 0.25s;
 }
