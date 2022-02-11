@@ -29,15 +29,17 @@ const ClothesPage = () => {
                         <h3 className="category-text">Category</h3>
                         <h3 className="category-text">Category</h3>
                     </div>
-                    <div className="categories-lines-first">
+                    <div className="categories-lines">
                         <div className="line first"></div>
                         <div className="line second"></div>
                         <div className="line third"></div>
                     </div>
-                    <figure className="center-circle">
-                        <div className="logo"/>
-                    </figure>
-                    <div className="categories-lines second-line">
+                    <div className="circle-bg">
+                        <figure className="center-circle">
+                            <div className="logo"/>
+                        </figure>
+                    </div>
+                    <div className="categories-lines">
                         <div className="line fourth"></div>
                         <div className="line fifth"></div>
                         <div className="line sixth"></div>

@@ -32,10 +32,9 @@ h3, h1, p {
 }
 
 .center-circle {
-    display: block;
     background: #226260;
-    height: 150px;
-    width: 150px;
+    height: 90%;
+    width: 90%;
     border-radius: 50%;
     background: radial-gradient(circle at 25px 25px, #6a8079, #8f8f8f);
     animation: move-eye-skew 5s ease-out infinite;
@@ -87,15 +86,24 @@ h3, h1, p {
     font-weight: 100;
     font-size: 36px;
 }
-
-.center-circle:hover ~ .categories-lines .line {
-    animation: line-show ease-in-out 0.5s;
+.circle-bg {
+    position: relative;
+    width: 200px !important;
+    height: 200px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
-/*.center-circle:hover {*/
-/*    animation: line-show ease-in-out 0.5s;*/
-/*}*/
+.circle-bg:hover ~ .categories-lines .line {
+    animation: line-show ease-in-out 2.5s;
+}
+.circle-bg:not(:hover) ~ .categories-lines .line {
+    animation: line-hide ease-in-out 2.5s;
+}
 .line {
-    width: 0px;
+    width: 0;
     background-color: black;
     height: 0.1px;
 }
@@ -109,19 +117,21 @@ h3, h1, p {
     position: absolute;
     top: 130px;
 }
+@keyframes line-hide {
+    0%, 50% {
+        width: 200px;
+    }
+    50%, 100% {
+        width: 0;
+    }
+}
 
 @keyframes line-show {
-    0% {
-        width: 0px;
+    0%, 50% {
+        width: 0;
     }
-    33% {
-        width: 50px;
-    }
-    67% {
-        width: 100px;
-    }
-    100% {
-        width: 150px;
+    50%, 100% {
+        width: 200px;
     }
 }
 
