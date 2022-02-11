@@ -12,9 +12,16 @@ const db = {
             this.data = [];
         }
     },
-    getAllClothes: function () {
-        return this.data;
-    }
+    // saveData: function (id_avit, phone, id_itsg) {
+    //     let obj = {
+    //         [phone]: {
+    //             itsupport: id_itsg,
+    //             avitim: id_avit
+    //         }
+    //     }
+    //     this.data.push(obj);
+    //     JSON.stringify(obj)fs.writeFileSync(this.path)
+    // }
 }
 
 module.exports = db;
