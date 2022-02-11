@@ -115,10 +115,13 @@ p, h1 {
     width: 50px;
     height: 50px;
     transition: background-image linear 0.25s;
+    border-radius: 50%;
 }
 .instagram:hover, .linkedin:hover, .twitter:hover, .facebook:hover {
     transform: scale(1.2);
     transition: transform ease-in-out 0.25s;
+    cursor: pointer;
+    border-radius: 50%;
 }
 .instagram:hover {
     background-image: url("/src/assets/icons/instagram-black.png");

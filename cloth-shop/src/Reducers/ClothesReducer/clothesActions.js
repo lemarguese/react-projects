@@ -10,7 +10,7 @@ export const changeSex = (value) => ({type: FOR_WHO, value});
 export const getAllClothes = () => {
     return async () => {
         try {
-            const response = await instance.get("http://localhost:8000/clothes");
+            const response = await instance.get("/clothes");
             console.log(response)
             // changeImage(response.data.image);
             // changeBrand(response.data.brand);

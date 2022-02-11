@@ -1,0 +1,138 @@
+h3, h1, p {
+    font-family: "SF Pro Display";
+}
+
+.Clothes-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #6a8079;
+}
+
+.title {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.scroller-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.center-circle {
+    display: block;
+    background: #226260;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 25px 25px, #6a8079, #8f8f8f);
+    animation: move-eye-skew 5s ease-out infinite;
+}
+
+.center-circle .logo {
+    width: 125px;
+    margin: 15px auto auto;
+    height: 125px;
+    background: url("/src/assets/icons/logo.svg") no-repeat center;
+    background-size: 125px;
+}
+
+.categories-left, .categories-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.categories-anim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.categories-left {
+    margin-right: 15px;
+}
+
+.categories-right {
+    margin-left: 15px;
+}
+
+.categories-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 7.5px;
+    position: relative;
+}
+
+.categories-left > *, .categories-right > * {
+    margin-bottom: 50px;
+}
+
+.category-text {
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.center-circle:hover ~ .categories-lines .line {
+    animation: line-show ease-in-out 0.5s;
+}
+/*.center-circle:hover {*/
+/*    animation: line-show ease-in-out 0.5s;*/
+/*}*/
+.line {
+    width: 0px;
+    background-color: black;
+    height: 0.1px;
+}
+
+.first, .fourth {
+    position: absolute;
+    bottom: 125px;
+}
+
+.third, .sixth {
+    position: absolute;
+    top: 130px;
+}
+
+@keyframes line-show {
+    0% {
+        width: 0px;
+    }
+    33% {
+        width: 50px;
+    }
+    67% {
+        width: 100px;
+    }
+    100% {
+        width: 150px;
+    }
+}
+
+@keyframes move-eye-skew {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+    100% {
+        transform: none;
+    }
+}
