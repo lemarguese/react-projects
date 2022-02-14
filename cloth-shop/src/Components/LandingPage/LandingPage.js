@@ -18,29 +18,29 @@ const LandingPage = (props) => {
             <div className="LandingPage-main">
                 <hr/>
                 <div className="cards-background">
-                    <a href="/clothes"  className = "cards">
+                    <a href="/clothes/"  className = "cards">
                         <div className="image"/>
                     </a>
-                    <NavLink to="/clothes" className = "cards">
+                    <NavLink to="/clothes/" className = "cards">
                         <div className="image"/>
                     </NavLink>
-                    <Link to="/clothes" className = "cards">
+                    <Link to="/clothes/" className = "cards">
                         <div className="image"/>
                     </Link>
-                    <Link to="/clothes" className = "cards">
+                    <Link to="/clothes/" className = "cards">
                         <div className="image"/>
                     </Link>
                 </div>
                 <hr/>
             </div>
             <div className="Location-header">
-                <h1 className="title">Location</h1>
+                <h1 className="location-title">Location</h1>
             </div>
             <div className="LandingPage-location">
                 <div className="map">
                 </div>
                 <div className="inner">
-                    <h2 className="title">
+                    <h2 className="location-title">
                         We are located
                     </h2>
                     <p className="content">

@@ -8,7 +8,8 @@ function App() {
     return (
         <Routes>
             <Route index exact element={<LandingPage title = "Clothes Shop" />}/>
-            <Route path="/clothes" exact element={<ClothesPage/>}/>
+            <Route path="/clothes/" exact element={<ClothesPage/>}/>
+            <Route path="/clothes/:category" element={<ClothesPage/>}/>
             <Route path="/login" exact element={<LoginLayout/>}/>
         </Routes>
     );

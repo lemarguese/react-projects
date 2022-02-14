@@ -26,11 +26,11 @@ const db = {
         this.data.push(obj);
         this.save();
     },
-    findAllowancesByPhone: function (phone) {
+    findAllowancesById: function (id) {
         for (let i of this.data) {
             let first = Object.keys(i)[0];
             let entries = Object.entries(i)[0];
-            if (first === phone) {
+            if (first === id) {
                 return entries[1];
             }
         }

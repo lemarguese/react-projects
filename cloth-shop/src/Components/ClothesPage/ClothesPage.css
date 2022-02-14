@@ -25,6 +25,7 @@ h3, h1, p {
 }
 
 .scroller-bg {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,12 +52,7 @@ h3, h1, p {
 .categories-left, .categories-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-.categories-anim {
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -75,6 +71,7 @@ h3, h1, p {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 7.5px;
+    z-index: 1;
     position: relative;
 }
 
@@ -83,9 +80,13 @@ h3, h1, p {
 }
 
 .category-text {
+    z-index: 1;
     font-weight: 100;
     font-size: 36px;
+    text-decoration: none;
+    color: #000;
 }
+
 .circle-bg {
     position: relative;
     width: 200px !important;
@@ -94,13 +95,23 @@ h3, h1, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+}
+
+.animation-cover {
+    position: absolute;
     z-index: 2;
+    width: 300px;
+    height: 100%;
 }
-.circle-bg:hover ~ .categories-lines .line {
-    animation: line-show ease-in-out 2.5s;
+
+.animation-cover:hover ~ .categories-lines .line {
+    animation: line-show 4s;
+    animation-fill-mode: forwards;
 }
-.circle-bg:not(:hover) ~ .categories-lines .line {
-    animation: line-hide ease-in-out 2.5s;
+.animation-cover:not(:hover) ~ .categories-lines .line {
+    animation-fill-mode: forwards;
+    animation: line-hide 4s;
 }
 .line {
     width: 0;
@@ -117,6 +128,7 @@ h3, h1, p {
     position: absolute;
     top: 130px;
 }
+
 @keyframes line-hide {
     0%, 50% {
         width: 200px;
