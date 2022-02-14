@@ -7,8 +7,8 @@ const createRouter = () => {
 
     router.get('/:id', async (req, res) => {
         let id = req.params.id;
-        const response = await axios.get(`http://localhost:8001/users/${id}`);
-        let arr = db.findAllowancesById(response.data.phone);
+        const response = await axios.get(`https://jsonplaceholder.typicode.com/users/?id=${id}`);
+        let arr = db.findAllowancesById(response.data[0].phone);
         res.send(arr);
     });
 
@@ -21,5 +21,7 @@ const createRouter = () => {
 
     return router;
 }
+
+
 
 module.exports = createRouter;
