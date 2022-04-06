@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "test-project-20210119",
+    "voypost": "voypost-app-55614"
+  },
+  "targets": {}
+}

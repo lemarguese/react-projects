@@ -1,80 +1,61 @@
 import React, {useEffect, useState} from 'react';
 
-import {onSnapshot, collection, doc, setDoc} from 'firebase/firestore'
-import {db} from "./firebase";
+import { onSnapshot, collection, doc, setDoc } from 'firebase/firestore'
+import { db } from "./firebase";
 
 
-interface IUser {
-    username: string,
-    password: string
+interface IStatus {
+    distance: number,
+    garbageStatus: string,
+    mass: number
 }
 
 function App() {
 
-    const [users, setUsers] = useState(Array<IUser>());
-    const [user, setUser] = useState<IUser>();
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [uid, setUID] = useState(0);
+    const [status, setStatus] = useState<IStatus>();
 
-    const addNewUser = async () => {
-        const docRef = doc(db, "users", "userNo1")
+    const addNewStatus = async () => {
+        setUID((uid) => uid + 1)
+
+        const docRef = doc(db, "status", `userNo${uid}`)
         const payload = {
-            username: user?.username,
-            password: user?.password
+            distance: 90,
+            garbageStatus: 'medium',
+            mass: 12
         }
         await setDoc(docRef, payload);
     }
 
     useEffect(() => {
 
-        onSnapshot(collection(db, 'users'), (res) => {
-            let arr = Array<IUser>();
+        onSnapshot(collection(db, 'status'), (res) => {
+            let status = {
+                distance: 0,
+                garbageStatus: 'garbageStatus',
+                mass: 0
+            }
             res.docs.map((doc) => {
-                let {username, password} = doc.data()
-                let user = {
-                    username: username,
-                    password: password
+                let {distance, garbageStatus, mass} = doc.data();
+                status = {
+                    distance: distance,
+                    garbageStatus: garbageStatus,
+                    mass: mass
                 }
-                arr.push(user)
             })
-            setUsers(arr)
+            setStatus(status);
         })
 
     }, [])
-
-    const handlePassAndName = (event: any) => {
-        const {value, name} = event.target;
-
-        if (name === "username") {
-            setUsername(value);
-        } else {
-            setPassword(value);
-        }
-
-        console.log(username, password)
-
-        setUser({
-            username: username,
-            password: password
-        });
-    }
 
     return (
         <div className="App">
             <header className="App-header">
                 <h1>Hello</h1>
-
-                <input type="text" name = "username" placeholder="username" onChange={(e) => {handlePassAndName(e)}}/>
-                <input type="password" name = "password" placeholder="password" onChange={(e) => {handlePassAndName(e)}}/>
-                <button onClick={addNewUser}>Add new user</button>
-
-                {users.map((el, i) => {
-                    return (<div key={i}>
-                        <div>{el.username}</div>
-                        <div>{el.password}</div>
-                    </div>)
-                })
-                }
+                <div>{status?.garbageStatus}</div>
+                <div>{status?.mass}</div>
+                <div>{status?.distance}</div>
+                <button onClick={addNewStatus}>Add status</button>
             </header>
         </div>
     );
