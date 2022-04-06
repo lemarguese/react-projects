@@ -12,7 +12,6 @@
     "@mui/styles": "^5.0.2",
     "@mui/system": "^5.0.6",
     "@testing-library/jest-dom": "^5.14.1",
-    "axios": "^0.26.1",
     "firebase": "^9.6.10",
     "formik": "^2.2.9",
     "google-map-react": "^2.1.10",
