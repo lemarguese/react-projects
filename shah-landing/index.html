@@ -1,0 +1,779 @@
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <title>Shah</title>
+    <link rel="stylesheet" href="index.css">
+    <meta property="og:title" content="СТАНЬ ОБЛАДАТЕЛЕМ СЛИТКА ЗОЛОТА С ШАХ!">
+    <meta property="og:description" content="Радуй себя вкусом чая «Шах», чтобы увеличить шансы на выигрыш!">
+    <meta property="og:image" content="images/favicon.svg">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="inner-container">
+        <div class="shah-body_container">
+            <div class="shah-registration_block">
+                <div class="shah-header_container">
+                    <div class="mobile-sidebar">
+                        <div class="sidebar-icon"></div>
+                        <div class="lang-selecter_block">
+                            <div class="lang-selecter">
+                                <input value="Қаз" class="select-input" onclick="changeLanguage(this)">
+                                <input value="Рус" class="select-input" onclick="changeLanguage(this)">
+                            </div>
+                            <div class="selecter-cover">
+                                <p id="select-text-mobile">Рус</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-block">
+                        <button class="header-registrationBtn">Зарегистрировать чек</button>
+                        <a class="routes" href="#criteria" onclick="activeRoute(this)">Правила</a>
+                        <a class="routes" href="#prizes" onclick="activeRoute(this)">Призы</a>
+                        <a class="routes" href="#winners" onclick="activeRoute(this)">Победители</a>
+                        <a class="routes" href="#qna" onclick="activeRoute(this)">FAQ</a>
+                        <a class="routes" onclick="profileRouter()">Личный кабинет</a>
+                        <div class="logout-block">
+                            <a class="logoutBtn">Выход</a>
+                            <div class="exit-icon"></div>
+                        </div>
+                        <div class="lang-selecter_block">
+                            <div class="lang-selecter">
+                                <input value="Қаз" class="select-input" onclick="changeLanguage(this)">
+                                <input value="Рус" class="select-input" onclick="changeLanguage(this)">
+                            </div>
+                            <div class="selecter-cover">
+                                <p id="select-text">Рус</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-mobile">
+                    <div class="sidebar-mobile_inner">
+                        <div class="sidebar-header">
+                            <div class="cross-close-mobile"></div>
+                            <div class="lang-selecter_block">
+                                <div class="lang-selecter">
+                                    <input value="Қаз" class="select-input" onclick="changeLanguage(this)">
+                                    <input value="Рус" class="select-input" onclick="changeLanguage(this)">
+                                </div>
+                                <div class="selecter-cover">
+                                    <p id="select-text-sidebar">Рус</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-body">
+                            <button class="header-registrationBtn">Зарегистрировать чек</button>
+                            <a class="routes" href="#criteria" onclick="activeRoute(this)">Правила</a>
+                            <a class="routes" href="#prizes" onclick="activeRoute(this)" >Призы</a>
+                            <a class="routes" href="#winners" onclick="activeRoute(this)">Победители</a>
+                            <a class="routes" href="#qna" onclick="activeRoute(this)">FAQ</a>
+                            <a class="routes" onclick="profileRouter()">Личный кабинет</a>
+                            <div class="logout-block">
+                                <a class="logoutBtn">Выход</a>
+                                <div class="exit-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shah-registration_inner">
+                    <div class="shah-registration-info">
+                        <div class="magnum-logo"></div>
+                        <div class="registration-content">
+                            <h1 class="registration-text">Стань обладателем слитка золота с ШАХ!</h1>
+                            <button class="body-registrationBtn">Зарегистрировать чек</button>
+                        </div>
+                        <div class="registration-info">
+                            <p class="registration-info_text">Период акции:
+                                <br> с 28 апреля по 25 мая 2022 года</p>
+                        </div>
+                    </div>
+                    <div class="shah-regImage"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shah-criterias_block" id="criteria">
+            <div class="shah-criterias_inner">
+                <h1 class="title">ПРАВИЛА УЧАСТИЯ: </h1>
+                <div class="criteria_steps">
+                    <div class="criteria_step">
+                        <div class="criteria-image first"></div>
+                        <div><p class="criteria-step_text">Купи 2 любые пачки чая <br> «Шах» в сети Magnum</p></div>
+                    </div>
+                    <div class="criteria_step">
+                        <div class="criteria-image second"></div>
+                        <div class="registration-criteria_block">
+                            <p class="criteria-step_text">Регистрируй чек* </p>
+                            <button class="criteria-registrationBtn">Зарегистрировать чек</button>
+                            <p class="criteria-info_text mobile">* Сохраняйте чеки до конца акции!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="criteria_step">
+                        <div class="criteria-image third"></div>
+                        <div><p class="criteria-step_text">Участвуй в розыгрыше <br> слитка золота и других  <br> призов
+                        </p></div>
+                    </div>
+                </div>
+                <div class="criteria-infos">
+                    <p class="criteria-info_text">* Сохраняйте чеки до конца акции!</p>
+                    <a class="criteria-info_text">Полные правила акции</a>
+                </div>
+            </div>
+        </div>
+        <div class="shah-awards_block" id="prizes">
+            <div class="awards-inner">
+                <h1 class="title">ПРИЗЫ</h1>
+                <div class="prize-list">
+                    <div class="prize-item active">
+                        <div><p class="prize-text">Ежедневный <br> приз</p></div>
+                        <div class="prize-image first-image"></div>
+                        <div class="prize-qn">
+                            <p class="prize-name">Сертификат в Magnum</p>
+                            <div class="quantity-bg">
+                                <p class="quantity-text">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.579 7.8552L15.6447 2.78949L12.9209 0.0657126L7.8552 5.13143L2.78949 0.0657126L0.0657144 2.78949L5.13143 7.8552L0.065713 12.9209L2.78949 15.6447L7.8552 10.579L12.9209 15.6447L15.6447 12.9209L10.579 7.8552Z"
+                                              fill="#2B0100"/>
+                                    </svg>
+                                    28
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prize-item">
+                        <div><p class="prize-text">ЕженеДЕЛЬНЫЙ <br> приз</p></div>
+                        <div class="prize-image second-image"></div>
+                        <div class="prize-qn">
+                            <p class="prize-name">IPhone 13pro </p>
+                            <div class="quantity-bg">
+                                <p class="quantity-text">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.579 7.8552L15.6447 2.78949L12.9209 0.0657126L7.8552 5.13143L2.78949 0.0657126L0.0657144 2.78949L5.13143 7.8552L0.065713 12.9209L2.78949 15.6447L7.8552 10.579L12.9209 15.6447L15.6447 12.9209L10.579 7.8552Z"
+                                              fill="#2B0100"/>
+                                    </svg>
+                                    4
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prize-item">
+                        <div><p class="prize-text">приз в конце<br>акции</p></div>
+                        <div class="prize-image third-image"></div>
+                        <div class="prize-qn">
+                            <p class="prize-name">Слиток золота 100 г</p>
+                            <div class="quantity-bg">
+                                <p class="quantity-text">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.579 7.8552L15.6447 2.78949L12.9209 0.0657126L7.8552 5.13143L2.78949 0.0657126L0.0657144 2.78949L5.13143 7.8552L0.065713 12.9209L2.78949 15.6447L7.8552 10.579L12.9209 15.6447L15.6447 12.9209L10.579 7.8552Z"
+                                              fill="#2B0100"/>
+                                    </svg>
+                                    1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shah-winners_block" id="winners">
+            <div class="winners-inner">
+                <div class="winners-header">
+                    <h1 class="title">ПОБЕДИТЕЛИ</h1>
+                    <div class="winner-info_block">
+                        <div class="gold"></div>
+                        <div class="winners-info">
+                            <h2 class="info-text">Обладатель главного <br> приза будет объявлен <br> <strong> 25
+                                мая </strong></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="prev-prize_block">
+                    <div class="tab-selectors">
+                        <div class="day-to-day_prizes">
+                            <svg width="100%" height="120" viewBox="0 0 530 120" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="desktop-svg">
+                                <g>
+                                    <rect x="0" y="0" width="100%" height="120" rx="7"
+                                          stroke="url(#paint0_linear_10_194)"
+                                          stroke-width="2">
+                                    </rect>
+                                    <text x="70" y="40" font-family="Helvetica Neue" font-weight="400" font-size="26"
+                                          fill="#D8B47D" class="day-prize_text">Ежедневные призы
+                                    </text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_10_194" x1="265" y1="0" x2="265" y2="100.351"
+                                                    gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.01458" stop-color="#D8B47D"/>
+                                        <stop offset="0.983563" stop-color="#D8B47D" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg width="100%" height="120" viewBox="120" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="mobile-svg">
+                                <g>
+                                    <rect x="0" y="0" width="100%" height="120" rx="7"
+                                          stroke="url(#paint0_linear_10_189)"
+                                          stroke-width="2">
+                                    </rect>
+                                    <text x="10" y="30" font-family="Helvetica Neue" font-weight="400" font-size="13"
+                                          fill="#D8B47D" class="day-prize_text">Ежедневные призы
+                                    </text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_10_189" x1="265" y1="10" x2="265" y2="50.351"
+                                                    gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.01458" stop-color="#D8B47D"/>
+                                        <stop offset="0.983563" stop-color="#D8B47D" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="week-to-week_prizes">
+                            <svg width="100%" height="120" viewBox="0 0 530 120" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="desktop-svg">
+                                <g>
+                                    <rect x="0" y="0" width="100%" height="120" rx="7"
+                                          stroke="url(#paint0_linear_10_192)"
+                                          stroke-width="2">
+                                    </rect>
+                                    <text x="60" y="40" font-family="Helvetica Neue" font-weight="400" font-size="26"
+                                          fill="#D8B47D" class="week-prize_text">Еженедельные призы
+                                    </text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_10_192" x1="265" y1="10" x2="265" y2="100.351"
+                                                    gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.01458" stop-color="#D8B47D"/>
+                                        <stop offset="0.983563" stop-color="#D8B47D" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg width="100%" height="120" viewBox="120" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="mobile-svg">
+                                <g>
+                                    <rect x="0" y="0" width="100%" height="120" rx="7"
+                                          stroke="url(#paint0_linear_10_190)"
+                                          stroke-width="2">
+                                    </rect>
+                                    <text x="10" y="30" font-family="Helvetica Neue" font-weight="400" font-size="13"
+                                          fill="#D8B47D" class="week-prize_text">Еженедельные призы
+                                    </text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_10_190" x1="265" y1="10" x2="265" y2="50.351"
+                                                    gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.01458" stop-color="#D8B47D"/>
+                                        <stop offset="0.983563" stop-color="#D8B47D" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <svg width="100%" height="15" viewBox="0 0 550 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="break-lines_underTab">
+                                <path d="M550 15H1V0" stroke="url(#paint0_linear_10_197)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_10_197" x1="243.059" y1="45.4194" x2="532.5"
+                                                    y2="45.4194" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.561213" stop-color="#D8B47D"/>
+                                        <stop offset="1" stop-color="#D8B47D" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="table-inner">
+                        <div class="table-headers_block">
+                            <div class="table-headers">
+                                <p class="prize-data_headerText">Дата розыгрыша </p>
+                                <p class="prize-data_headerText">Номер победителя</p>
+                                <p class="prize-data_headerText">Имя</p>
+                                <p class="prize-data_headerText">Город</p>
+                            </div>
+                        </div>
+                        <div class="table-data_block day">
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#paint0_linear_10_214)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_10_214" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-data_block week">
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#week-line-1)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="week-line-1" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                            <div class="table-datas-container">
+                                <svg width="100%" height="2" viewBox="0 0 1056 2" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" class="break-lines">
+                                    <line x1="8.74228e-08" y1="1" x2="1056" y2="1.00009"
+                                          stroke="url(#week-line-2)" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="week-line-2" x1="-8.57919e-08" y1="2.98134"
+                                                        x2="1091.45" y2="2.98144" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                                            <stop offset="0.0783175" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.897867" stop-color="#D8B47D" stop-opacity="0.4"/>
+                                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <div class="table-datas">
+                                    <p class="prize-data">Дата розыгрыша </p>
+                                    <p class="prize-data">Номер победителя</p>
+                                    <p class="prize-data">Имя</p>
+                                    <p class="prize-data">Город</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="winners-pagination_block">
+                <div class="winners-pagination_inner">
+                    <div class="previous-arrows_block">
+                        <div class="toFirst"></div>
+                        <div class="toPrev"></div>
+                    </div>
+                    <div class="pagination-Num">
+                        <p class="pagination-text firstPag">1</p>
+                        <p class="pagination-text secondPag">2</p>
+                        <p class="pagination-text">...</p>
+                        <p class="pagination-text lastPag">8</p>
+                    </div>
+                    <div class="next-arrows_block">
+                        <div class="toNext"></div>
+                        <div class="toLast"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shah-qna_block" id="qna">
+            <div class="shah-qna_inner">
+                <div class="qna-header">
+                    <h1 class="qna-title">Вопросы и ответы</h1>
+                    <p class="qna-content">Посмотри часто задаваемые вопросы, возможно, ответ уже есть. <br> Либо напиши
+                        нам, указав номер мобильного, и мы постараемся ответить быстрее, чем заваривается чашечка чая
+                        «Шах».
+                    </p>
+                </div>
+                <div class="qna-form_block">
+                    <div class="qna-form"> <!-- // must be a form, but for demo used div -->
+                        <div class="form-inputs">
+                            <input placeholder="Имя" class="form-input"/>
+                            <input placeholder="E-mail" class="form-input"/>
+                            <input placeholder="Мобильный телефон" class="form-input"/>
+                            <textarea maxlength="50" placeholder="Напишите свой вопрос"
+                                      class="form-textarea"></textarea>
+                        </div>
+                        <button type="submit" class="submitBtn">Отправить</button>
+                    </div>
+                </div>
+                <div class="qna-list_block">
+                    <div class="qna-list_inner">
+                        <div class="qna-item">
+                            <div class="question">
+                                <p class="qna-item_text">Вопросы и раскрывающиеся ответы
+                                </p>
+                                <div class="dropdown-arr"></div>
+                            </div>
+                            <p class="hidd-answer">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                        </div>
+                        <div class="qna-item">
+                            <div class="question">
+                                <p class="qna-item_text">У меня есть чек, как его зарегистрировать?</p>
+                                <div class="dropdown-arr second-arr"></div>
+                            </div>
+                            <p class="hidd-answer">Для регистрации чека нужно пройти регистрацию на сайте, ввести логин
+                                и пароль (если регистрация была пройдена ранее); нажать на кнопку «ЧЕК», загрузить фото
+                                чека с покупкой.</p>
+                        </div>
+                        <div class="qna-item">
+                            <div class="question">
+                                <p class="qna-item_text">Вопросы и раскрывающиеся ответы
+                                </p>
+                                <div class="dropdown-arr"></div>
+                            </div>
+                            <p class="hidd-answer">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shah-footer_container">
+            <div class="footer-inner">
+                <p class="footer-text">Период акции: с 28 апреля по 25 мая 2022 года</p>
+            </div>
+        </div>
+    </div>
+    <div class="modals"> <!-- all modals are hidden unless clicked -->
+
+        <!-- authorization modal from register login button -->
+        <div class="authorization-modal">
+            <div class="authorization_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <form class="authorization-form">
+                    <h1 class="auth-title">АВТОРИЗАЦИЯ</h1>
+                    <div class="auth-inputs">
+                        <input placeholder="Номер мобильного телефона " class="auth-input">
+                        <div>
+                            <input placeholder="Пароль" class="auth-input">
+                            <a class="forgetBtn">Забыли?</a>
+                        </div>
+                    </div>
+                    <button class="modalButton" type="submit">войти</button>
+                </form>
+                <svg width="100%" height="2" viewBox="0 0 100% 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="line-break">
+                    <path d="M0 1L305 1.00003" stroke="url(#paint0_linear_13_863)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_13_863" x1="-1.48857e-07" y1="2.99155" x2="315.24"
+                                        y2="2.99158" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                            <stop offset="0.0783175" stop-color="#D8B47D"/>
+                            <stop offset="0.897867" stop-color="#D8B47D"/>
+                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="auth-register">
+                    <h1 class="register-title">Впервые на сайте?</h1>
+                    <button class="registerBtn login">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- registration modal from register check button -->
+        <div class="registration-modal">
+            <div class="registration_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <form class="registration-form">
+                    <h1 class="reg-title">РЕГИСТРАЦИЯ</h1>
+                    <p class="warning-info">Завари чашечку ароматного чая «Шах» и еще раз проверь свои данные.
+                        Правильно указанные данные нужны для связи в случае выигрыша.
+                    </p>
+                    <div class="reg-inputs">
+                        <input placeholder="Имя" class="auth-input">
+                        <input placeholder="Номер мобильного телефона" type="tel" class="auth-input">
+                        <div class="location-select_block">
+                            <div class="location-select_cover">
+                                <div class="location-cover">Город проживания</div>
+                                <div class="dropdown-select">
+                                    <div class="dropdown-select-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="location-select">
+                                <input placeholder="Актобе" value="Актобе" class="location-input"
+                                       onclick="changeLabel(this)">
+                                <input placeholder="Almaty" value="Almaty" class="location-input"
+                                       onclick="changeLabel(this)">
+                                <input placeholder="Kyiv" value="Kyiv" class="location-input"
+                                       onclick="changeLabel(this)">
+                                <input placeholder="Berlin" value="Berlin" class="location-input"
+                                       onclick="changeLabel(this)">
+                            </div>
+                        </div>
+                        <input placeholder="E-mail" class="auth-input" type="email">
+                        <input placeholder="Пароль" class="auth-input">
+                        <button class="registerBtn register">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                        <p class="warning-info">Нажатие кнопки «Зарегистрироваться» подтверждает согласие с <strong>правилами
+                            акции</strong></p>
+                    </div>
+                </form>
+                <svg width="100%" height="2" viewBox="0 0 100% 2" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="line-break">
+                    <path d="M0 1L305 1.00003" stroke="url(#paint0_linear_13_863)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_13_863" x1="-1.48857e-07" y1="2.99155" x2="315.24"
+                                        y2="2.99158" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D8B47D" stop-opacity="0"/>
+                            <stop offset="0.0783175" stop-color="#D8B47D"/>
+                            <stop offset="0.897867" stop-color="#D8B47D"/>
+                            <stop offset="0.963542" stop-color="#D8B47D" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="auth-register">
+                    <h1 class="register-title">УЖЕ ЗАРЕГИСТРИРОВАНЫ?</h1>
+                    <button class="registerBtn registerLogin">ВОЙТИ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- registration modal if successful -->
+        <div class="registrationSuccess-modal">
+            <div class="registrationSuccess_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="registrationSuccess-form">
+                    <h1 class="auth-title_success">РЕГИСТРАЦИЯ ПРОЙДЕНА!</h1>
+                    <p class="modal-text_info">Загрузи чек и участвуй в розыгрыше призов, которые сделают чаепитие
+                        особенным!</p>
+                    <button class="registerBtn registerSuccess">ЗАРЕГИСТРИРОВАТЬ ЧЕК</button>
+                </div>
+                <div class="auth-register">
+                    <h1 class="registrationSuccess-note">Сохраняйте чеки до конца акции!</h1>
+                    <div class="chai-bg"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- recovery modal for password -->
+        <div class="recoverySent-modal">
+            <div class="recoverySent_inner">
+                <div class="cross-close"></div>
+                <div class="recoverySent-form">
+                    <p class="modal-text_info">Ссылка на восстановление пароля отправлена на указанный электронный
+                        адрес</p>
+                    <button class="agreementBtn recoveryBtn">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- question modal from FAQ block -->
+        <div class="questionSent-modal">
+            <div class="questionSent_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="questionSent-form">
+                    <p class="modal-text_info">Вопрос отправлен! Постараемся вернуться как можно скорее.</p>
+                    <button class="agreementBtn questionBtn">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- email for password -->
+        <div class="recovery-modal">
+            <div class="recovery_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="recovery-form"> <!-- // must be a form, but for demo used div -->
+                    <p class="modal-text_info">Введите e-mail − на него будет отправлена ссылка для восстановления
+                        пароля.</p>
+                    <input placeholder="E-mail" class="auth-input" required>
+                    <button class="modalButton emailBtn">ВОССТАНОВИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- after successful link with email, modal for password -->
+        <div class="passwordNew-modal">
+            <div class="passwordNew_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="passwordNew-form"> <!-- // must be a form, but for demo used div -->
+                    <p class="modal-text_info">Придумайте новый пароль</p>
+                    <input placeholder="Пароль" class="auth-input" required>
+                    <button class="modalButton passwordBtn">ИЗМЕНИТЬ ПАРОЛЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- successfully created password modal thus authorize -->
+        <div class="authPassword-modal">
+            <div class="authPassword_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="authPassword-form"> <!-- // also must be a form, but for demo used div -->
+                    <p class="modal-text_info">Пароль успешно изменен, авторизуйтесь</p>
+                    <input placeholder="Номер мобильного телефона " class="auth-input" required>
+                    <input placeholder="Пароль" class="auth-input" required>
+                    <button class="modalButton authPasswordBtn">войти</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- telephone is being registered -->
+        <div class="telephoneUsed-modal">
+            <div class="telephoneUsed_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="telephoneUsed-form">
+                    <p class="modal-text_info telephoneUsed-text">Этот номер телефона уже использовался для регистрации Личного кабинета.</p>
+                    <button class="modalButton telephoneUsedBtn">авторизоваться</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- registration of receipt only after authorization -->
+        <div class="registrationRequired-modal">
+            <div class="registrationRequired_inner">
+                <div class="cross-close" onclick="closeModal(this)"></div>
+                <div class="registrationRequired-form">
+                    <p class="modal-text_info regRequire-text"><strong>Чтобы принять участие в акции, <br> вам нужно пройти регистрацию.</strong> <br> Заполните простую анкету на этом сайте и становитесь участником акции! </p>
+                    <button class="modalButton telephoneUsedBtn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

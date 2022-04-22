@@ -1,0 +1,603 @@
+body {
+    margin: 0;
+    background-color: #ebe9ff;
+}
+
+.main_container {
+    max-width: 2560px;
+    margin: auto;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.main-header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.main-body {
+    width: 100%;
+    max-height: 2000px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.main-footer {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+}
+
+.kazior-logo_block {
+    width: 26%;
+    height: 100%;
+}
+
+.kazior-info_block {
+    width: 70%;
+}
+
+.kazior-social_media-container {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.kazior-hashtags {
+    width: 70%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.hashtag {
+    background-color: #FF9900;
+    padding: 12px 0 12px 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.first, .second, .third {
+    position: relative;
+    background-color: #402D97;
+    color: #FFF;
+    text-decoration-line: underline;
+}
+
+.first {
+    top: calc(50% - 75px);
+}
+
+.second {
+    top: calc(100% - 100px);
+    background-color: #FF9900;
+}
+
+.third {
+    top: 30%;
+}
+
+.above-line {
+    width: 100%;
+    height: 7px;
+    background-color: #402D97;
+}
+
+.kazior-logo {
+    width: 120px;
+    height: 150px;
+    background: url(assets/images/kazior-logo.svg) no-repeat center;
+    background-size: 100%;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.cancer_block {
+    width: calc(36% - 50px);
+    height: 100%;
+    margin-left: 50px;
+}
+
+.children-health_block {
+    width: 25%;
+    height: 100%;
+}
+
+.lungs-institute_block {
+    width: 29%;
+    height: 100%;
+}
+
+.kazior-social_media {
+    width: 100%;
+    height: 75px;
+    background-color: #402D97;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 10px;
+    /*height: 1;*/
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    margin-left: 20px;
+}
+
+.facebook {
+    background: url(assets/images/facebook-icon.svg) no-repeat center;
+    background-size: 34px;
+}
+
+.twitter {
+    background: url(assets/images/twitter-icon.svg) no-repeat center;
+    background-size: 34px;
+}
+
+.instagram {
+    background: url(assets/images/instagram-icon.svg) no-repeat center;
+    background-size: 34px;
+}
+
+.orange-block {
+    width: 10px;
+    height: 100%;
+    background-color: #FF9900;
+}
+
+.kaz-sights {
+    position: relative;
+}
+
+.sight-title {
+    font-size: 288px;
+    color: transparent;
+    z-index: 0;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    margin: 0;
+    top: -15px;
+    left: 10%;
+    position: absolute;
+    font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ADA9CE;
+    animation: moving-text infinite linear 15s;
+}
+
+.sights-image {
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 430px;
+    background: url(assets/images/sight-kaz.svg) no-repeat center;
+    background-size: 100%;
+}
+
+.kazior-news_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.news-block {
+    height: 210px;
+}
+
+.first-news {
+    background: url(assets/images/first-news.png) no-repeat center;
+    background-size: 100%;
+}
+
+.second-news {
+    background: url(assets/images/second-news.png) no-repeat center;
+    background-size: 100%;
+}
+
+.third-news {
+    background: url(assets/images/third-news.png) no-repeat center;
+    background-size: 100%;
+
+}
+
+.fourth-news {
+    background: url(assets/images/fourth-news.png) no-repeat center;
+    background-size: 100%;
+}
+
+.kazior-news_logo, .kazior-content_block {
+    position: relative;
+    z-index: 1;
+}
+
+.kazior-news_logo {
+    width: 100%;
+    height: 60%;
+}
+
+.kazior-content_block {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.kazior-news_logo {
+    background: url(assets/images/kazior-news_logo.svg) no-repeat 40px 15px;
+    background-size: 80px;
+}
+
+.pallative {
+    background-image: url(assets/images/pallative-logo.svg);
+}
+
+.bg-cover {
+    background-color: #292253;
+    opacity: 0.7;
+    position: relative;
+    bottom: 100%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.news_title {
+    margin-left: 40px;
+    width: 60%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fFF;
+}
+
+.website-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 40%;
+}
+
+.website-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFF;
+    text-decoration-line: underline;
+}
+
+.more-arrow {
+    width: 35px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    height: 35px;
+    cursor: pointer;
+    background: url(assets/images/more-arrow.svg) no-repeat center;
+    background-size: 15px;
+}
+
+.kazior-date_block {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.kazior-date_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 35px 0 0 35px;
+    /* identical to box height */
+
+    color: #4F4981;
+}
+
+.blue-line {
+    margin-top: 68px;
+    width: 70%;
+    background-color: #402D97;
+    height: 7px;
+}
+
+.mobile-kazior-logo {
+    display: none;
+    width: 100%;
+    height: 120px;
+    background: url(assets/images/kazior-logo.svg) no-repeat center;
+    background-size: 100px;
+}
+
+.select-lang_block {
+    margin-bottom: 25px;
+}
+
+#lang-selecter {
+    position: relative;
+    bottom: 15px;
+    width: 50px;
+    right: 25px;
+    height: 40px;
+    appearance: none;
+    opacity: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: 2;
+}
+
+.selecter-design {
+    position: relative;
+    right: 25px;
+    top: 25px;
+    width: 50px;
+    height: 30px;
+    border-bottom: 1px solid #FFFF;
+    padding-bottom: 5px;
+}
+
+.selecter-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.selecter-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 14px;
+}
+
+.dropdown-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    font-size: 0;
+    line-height: 0;
+    float: left;
+    margin-left: 20px;
+}
+
+.orange-block_bottom {
+    position: relative;
+    width: 10px;
+    top: -30px;
+    height: 140%;
+    background-color: #FF9900;
+}
+
+@media (max-width: 1440px) {
+    .sights-image {
+        height: 70%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .sights-image {
+        height: 370px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .sights-image {
+        height: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .kazior-logo_block {
+        width: 40%;
+    }
+
+    .kazior-social_media-container {
+        width: 380px;
+    }
+
+    .cancer_block {
+        width: 23%;
+    }
+
+    .kazior-hashtags {
+        width: 600px;
+        position: relative;
+        top: 35px;
+        right: 24px;
+    }
+
+    .first-news, .second-news, .third-news, .fourth-news {
+        background-size: 800px;
+    }
+
+    .sights-image, .kazior-news_block {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+    .sights-image {
+        height: 45vw;
+        background-position-y: 50px;
+    }
+
+    .first {
+        margin-left: 0;
+    }
+
+    .kazior-news_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourth-news {
+        margin-bottom: 75px;
+    }
+
+    .orange-block_bottom {
+        position: unset;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .kazior-hashtags, .kazior-logo_block {
+        display: none;
+    }
+
+    .mobile-kazior-logo {
+        display: block;
+    }
+
+    .kazior-social_media-container {
+        width: 100%;
+    }
+
+    .sight-title {
+        font-size: 200px;
+    }
+
+    .select-lang_block {
+        margin-right: 0;
+    }
+
+    .selecter-design, #lang-selecter {
+        right: 0;
+    }
+
+    .news_title {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .more-arrow {
+        display: none;
+    }
+
+    .website-more {
+        margin-top: 10px;
+        margin-left: 40px;
+        width: unset;
+    }
+
+    .blue-line, .kazior-date_block {
+        width: 50%;
+    }
+
+    .kazior-date_text {
+        padding-left: 15px;
+    }
+
+    .kazior-content_block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sights-image {
+        height: 55vw;
+    }
+
+    .news_title {
+        width: 80%;
+    }
+
+    .sight-title {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 375px) {
+    .first-title {
+        font-size: 12px;
+    }
+
+    .second-title {
+        margin-top: 20px;
+    }
+}
+
+@keyframes moving-text {
+    0% {
+        transform: translateX(100%);
+    }
+    10% {
+        transform: translateX(80%);
+    }
+    20% {
+        transform: translateX(60%);
+    }
+    30% {
+        transform: translateX(40%);
+    }
+    40% {
+        transform: translateX(20%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    60% {
+        transform: translateX(-20%);
+    }
+    70% {
+        transform: translateX(-40%);
+    }
+    80% {
+        transform: translateX(-60%);
+    }
+    90% {
+        transform: translateX(-80%);
+    }
+    100% {
+        transform: translateX(-110%);
+    }
+}
