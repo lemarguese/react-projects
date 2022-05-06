@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Manrope';
+    font-weight: normal;
+    src: url("../../../src/assets/fonts/Manrope-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 300;
+    src: url("../../../src/assets/fonts/Manrope-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Manrope;
+    font-weight: bold;
+    src: url("../../../src/assets/fonts/Manrope-Bold.ttf") format('truetype');
+}
+
+p, a, h1, h2, h3, input, label, input {
+    font-family: Manrope, serif;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.container_inner {
+    max-width: 425px;
+    margin: auto;
+    padding: 50px;
+    height: 100%;
+}
+
+.header-content {
+    margin-bottom: 75px;
+}
+
+.header-title {
+    font-size: 42px;
+    font-family: Manrope, serif;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    margin-bottom: 25px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#email, #password {
+    border: 3px solid #02D1D4;
+    border-radius: 5px;
+    height: 40px;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#email::placeholder, #password::placeholder {
+    font-size: 16px;
+}
+
+#email:focus, #password:focus {
+    outline: none;
+}
+
+.submit-block {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submitBtn {
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    background-color: #02D1D4;
+    color: white;
+    height: 40px;
+}
+
+a {
+    margin-top: 10px;
+    text-decoration-line: none;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.break-lines_block {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.break-line {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 40%;
+}
+
+.login-info {
+    margin: 15px 0;
+    font-family: Manrope, serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.or-text {
+    font-family: Manrope, serif;
+    font-size: 14px;
+}
+
+.social-medias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-medias > * {
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    background-color: darkred;
+}
+
+.google-icon {
+    background: url("../../assets/images/google-icon.svg") no-repeat center;
+    background-size: 40px;
+}
+
+.facebook-icon {
+    background: url("../../assets/images/facebook-icon.svg") no-repeat center;
+    background-size: 40px;
+}
+
+.apple-icon {
+    background: url("../../assets/images/apple-icon.svg") no-repeat center;
+    background-size: 40px;
+}
